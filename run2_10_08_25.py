@@ -12,7 +12,7 @@ leftattach = Motor(Port.E, Direction.COUNTERCLOCKWISE)
 rightattach = Motor(Port.F, Direction.CLOCKWISE)
 drive_base = DriveBase(right, left, 81.6, 101.7)
 
-drive_base.settings(400)
+drive_base.settings(300)
 # The main program starts here.
 drive_base.use_gyro(True)
 heading=0
@@ -28,9 +28,22 @@ rightattach.run_angle(500,95)
 rightattach.run_angle(500,-95)
 rightattach.run_angle(500,95)
 rightattach.run_angle(500,-95)
-drive_base.turn(-46)
-drive_base.settings(500)
-drive_base.straight(700)
+#finish hitting silo
+drive_base.straight(200)
 
-drive_base.straight(-500)
+drive_base.turn(-66)
+wait(500)
+drive_base.straight(650)
+#ready to turn to deliver a flag
+drive_base.turn(15)
+
+drive_base.straight(-310)
+drive_base.settings(600)
+drive_base.straight(-200)
+drive_base.straight(200)
+drive_base.straight(-400)
+drive_base.straight(200)
+# wait(500)
+# #drive_base.turn(45)
+# wait(500)
 
