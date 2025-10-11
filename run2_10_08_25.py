@@ -16,25 +16,25 @@ drive_base.settings(300)
 # The main program starts here.
 drive_base.use_gyro(True)
 heading=0
-print('tHIS iS dAIlY NeWs pREsEnTInG aLeXS BrAiNCeLl LOsS pEr SeCoNd, WhICh iS ', prime_hub.battery.voltage())
-print('aLExs iQ LoSs iS  ', prime_hub.battery.current())
+print('volT_Ttage is', prime_hub.battery.voltage())
+print("mA is  ", prime_hub.battery.current())
 rightattach.run_angle(500,-95)
 drive_base.straight(660)
 #rightattach.run_angle(100,-400)
 #now beginning to wack wack wack the silo for free food
-rightattach.run_angle(500,95)
-rightattach.run_angle(500,-95)
-rightattach.run_angle(500,95)
-rightattach.run_angle(500,-95)
-rightattach.run_angle(500,95)
-rightattach.run_angle(500,-95)
+rightattach.run_angle(500,100)
+rightattach.run_angle(500,-100)
+rightattach.run_angle(500,100)
+rightattach.run_angle(500,-100)
+rightattach.run_angle(500,100)
+rightattach.run_angle(500,-100)
 #finish hitting silo
 drive_base.straight(200)
-
 drive_base.turn(-66)
-wait(500)
 drive_base.straight(700)
-wait(500)
+drive_base.straight(-250)
+drive_base.turn(-90)
+drive_base.straight()
 
 #ready to turn to deliver a flag
 
