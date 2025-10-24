@@ -60,3 +60,13 @@ wait(500)
 drive_base.straight(225)
 wait(500)
 leftattach.run_angle(700,-180)
+#ready to go home
+#facing home
+wait(500)
+drive_base.straight(-30)
+drive_base.settings(100)
+drive_base.turn(60)
+drive_base.settings(800)
+drive_base.straight(-300)
+drive_base.turn(50)
+drive_base.straight(900)
