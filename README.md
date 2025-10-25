@@ -2,7 +2,7 @@
 This repo is for FLL Challenge 2026 _Unearthed_.
 
 ## Reminders:
-The ports:
+### The ports:
 
 right wheel: Port A
 
