@@ -22,36 +22,46 @@ rightattach.run_angle(500,-95)
 drive_base.straight(680)
 #rightattach.run_angle(100,-400)
 #now beginning to wack wack wack the silo for free food
-rightattach.run_angle(500,105)
-rightattach.run_angle(500,-105)
-rightattach.run_angle(500,105)
-rightattach.run_angle(500,-105)
-rightattach.run_angle(500,105)
-rightattach.run_angle(500,-105)
+rightattach.run_angle(850,105)
+rightattach.run_angle(850,-105)
+rightattach.run_angle(850,105)
+rightattach.run_angle(850,-105)
+rightattach.run_angle(850,105)
+rightattach.run_angle(850,-80)
+#fried rice have msg yummy msg
+#fried rice have msg yummy msg
 #after hitting silo
 drive_base.straight(215)
 drive_base.turn(-70)
 drive_base.straight(625)
+drive_base.turn(10)
+#i have fried rice syndrome i will be back tomorrow
 wait(500)
 drive_base.straight(-120)
 #Flag is out
 wait(500)
 drive_base.turn(-20)
 drive_base.straight(400)
-drive_base.turn(50)
+drive_base.turn(45)
 wait(500)
-drive_base.straight(-25)
+drive_base.straight(-30)
 #ready to hit basket
 leftattach.run_angle(1000,150)
-#finishing hitting basket
-drive_base.turn(-10)
+# finishing hitting basket
+drive_base.turn(-16)
 wait(100)
-drive_base.straight(-370)
-wait(500)
-drive_base.straight(200)
-wait(100)
-drive_base.turn(-50)
-drive_base.straight(800)
+drive_base.straight(-411)
+wait(300)
+drive_base.straight(167)
+drive_base.curve(-200,-180)
+#fried rice have msg yummy msg
+#fried rice have msg yummy msg
+#fried rice have msg yummy msg
+# wait(500)
+# drive_base.straight(200)
+# wait(100)
+# drive_base.turn(-50)
+# drive_base.straight(800)
 
 
 
