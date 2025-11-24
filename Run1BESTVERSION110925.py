@@ -54,7 +54,7 @@ wait(500)
 leftattach.run_angle(500,125)
 wait(500)
 #used to be turn 20, now 25
-drive_base.turn(32)
+drive_base.turn(29)
 wait(500)
 #new on 10/22 11:36am
 drive_base.straight(235)
