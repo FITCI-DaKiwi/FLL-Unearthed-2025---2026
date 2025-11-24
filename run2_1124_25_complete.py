@@ -3,7 +3,7 @@ from pybricks.parameters import Direction, Port
 from pybricks.pupdevices import Motor
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait
-#the initial position is the right hand robot's gray tile on the 11th light square
+#the initial position is the right hand robot's gray tile on the 10th light square
 # Set up all devices.
 prime_hub = PrimeHub()
 left = Motor(Port.A, Direction.CLOCKWISE)
