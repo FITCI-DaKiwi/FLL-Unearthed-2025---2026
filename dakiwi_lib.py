@@ -1,5 +1,5 @@
 from pybricks.tools import wait
-def move_straight(hub, drive_base, distance, speed):
+def move_straight_v1(hub, drive_base, distance, speed):
         hub.imu.reset_heading(0)
         target_heading = 0
 
@@ -24,7 +24,7 @@ def move_straight(hub, drive_base, distance, speed):
         heading = hub.imu.heading()
         # print('after straight, the heading is:', heading)
 
-def move_straight_v2(hub, drive_base, distance, speed):
+def move_straight(hub, drive_base, distance, speed):
         hub.imu.reset_heading(0)
         target_heading = 0
 
