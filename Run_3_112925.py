@@ -3,7 +3,7 @@ from pybricks.parameters import Direction, Port
 from pybricks.pupdevices import Motor
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait
-from dakiwi_lib import turn_exact,move_straight
+
 # Set up all devices.
 prime_hub = PrimeHub()
 left = Motor(Port.A, Direction.CLOCKWISE)
@@ -24,6 +24,27 @@ drive_base.straight(-600)
 drive_base.straight(185)
 leftattach.run_angle(670, 90)
 drive_base.turn(45)
-drive_base.straight(-600)
-drive_base.turn(-90)
-drive_base.straight(-250)
+drive_base.straight(-580)
+drive_base.settings(175)
+drive_base.turn(-95)
+drive_base.settings(300)
+drive_base.straight(-100)
+drive_base.settings(500)
+wait(410)
+drive_base.settings(600)
+drive_base.straight(-300)
+drive_base.turn(-35)
+drive_base.straight(200)
+drive_base.turn(-20)
+drive_base.straight(300)
+drive_base.turn(-20)
+drive_base.straight(-700)
+
+
+
+
+
+
+
+
+
