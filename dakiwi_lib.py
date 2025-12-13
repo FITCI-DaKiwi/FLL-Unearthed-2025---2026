@@ -55,7 +55,7 @@ def move_straight(hub, drive_base, distance, speed):
 
         # read the heading after go straight
         heading = hub.imu.heading()
-        # print('after straight, the heading is:', heading)
+        print('after straight, the heading is:', heading)
         drive_base.stop()
 
 def turn_exact(hub, drive_base, left, right, target_degree):
@@ -67,12 +67,13 @@ def turn_exact(hub, drive_base, left, right, target_degree):
         target_turn = target_degree
 
         heading = hub.imu.heading()
-        # print('before turn, the heading is:', heading)
+        print('before turn, the heading is:', heading)
         drive_base.turn(target_turn)
         heading = hub.imu.heading()
-        # print('after turn, the heading is:', heading)
+        print('after turn, the heading is:', heading)
 
         while abs(heading - target_turn) > 0.05:
+            print(heading)
             if heading - target_turn > 0.05:
                 left.run(20)
                 right.run(-20)
@@ -82,7 +83,7 @@ def turn_exact(hub, drive_base, left, right, target_degree):
                 right.run(20)
                 heading = hub.imu.heading()
         heading = hub.imu.heading()
-        # print('after correction, the heading is:', heading)
+        print('after correction, the heading is:', heading)
 
         # stop turning
         left.stop()
