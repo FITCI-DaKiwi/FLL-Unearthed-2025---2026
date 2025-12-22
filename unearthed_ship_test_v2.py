@@ -24,7 +24,7 @@ print('before start, the heading is:', heading)
 
 
 move_straight_v1(hub, drive_base, -320, 150)
-print('tHIS iS dAIlY NeWs pREsEnTInG aLeXS BrAiNCeLl LOsS pEr SeCoNd, WhICh iS ', hub.battery.voltage())
+print('tHIS iS tHe dAIlY NeWs pREsEnTInG aLeXS BrAiNCeLl LOsS pEr SeCoNd, WhICh iS ', hub.battery.voltage())
 # # drive_base.use_gyro(False)
 move_straight_v1(hub, drive_base, -150, 100)
 # put flag down
@@ -35,8 +35,9 @@ drive_base.curve(-337,51)
 # turn_exact(hub, drive_base, right, left, 90)
 move_straight_v1(hub, drive_base, -367, 333)
 turn_exact(hub, drive_base, right, left, 80)
+move_straight_v1(hub, drive_base, -100, 433)
 right_side.run_angle(500, 120)
-move_straight_v1(hub, drive_base, 125, 257)
+move_straight_v1(hub, drive_base, 225, 257)
 right_side.run_angle(1000, -90)
 move_straight_v1(hub, drive_base, -100, 15) 
 
