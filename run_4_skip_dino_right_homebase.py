@@ -22,32 +22,54 @@ drive_base = DriveBase(left, right, 62.4, 113)
 heading = hub.imu.heading()
 print('before start, the heading is:', heading)
 
-
-move_straight_v1(hub, drive_base, -320, 150)
-print('tHIS iS tHe dAIlY NeWs pREsEnTInG aLeXS BrAiNCeLl LOsS pEr SeCoNd, WhICh iS ', hub.battery.voltage())
-# # drive_base.use_gyro(False)
-move_straight_v1(hub, drive_base, -150, 100)
-# put flag down
-left_side.run_angle(300, 80)
-move_straight_v1(hub, drive_base, 10, 500)
-move_straight_v1(hub, drive_base, 300, 500)
-drive_base.curve(-430,44)
 drive_base.use_gyro(True)
-drive_base.straight(-185)
-drive_base.turn(40)
-drive_base.straight(-590)
-drive_base.turn(50)
-drive_base.straight(125)
+# move_straight_v1(hub, drive_base, -330, 150)
+drive_base.settings(straight_speed = 150)
+drive_base.straight(-367)
+print('tHIS iS tHe dAIlY NeWs pREsEnTInG aLeXS BrAiNCeLl LOsS pEr SeCoNd, WhICh iS ', hub.battery.voltage())
+# move_straight_v1(hub, drive_base, -150, 100)
+drive_base.settings(straight_speed = 100)
 drive_base.straight(-150)
-drive_base.curve(-120,60)
-drive_base.straight(-400)
-# # turn_exact(hub, drive_base, right, left, 90)
-# move_straight_v1(hub, drive_base, -322, 333)
-# turn_exact(hub, drive_base, right, left, 70)
-# # move_straight_v1(hub, drive_base, -10, 433)
-# wait(1000)
-# right_side.run_angle(500, 120)
-# wait(1000)
-# move_straight_v1(hub, drive_base, 63.7, 257)
-# # right_side.run_angle(1000, -90)
-# # move_straight_v1(hub, drive_base, -100, 15) 
+# put flag down
+left_side.run_angle(200, 80)
+# move_straight_v1(hub, drive_base, 10, 500)
+drive_base.settings(straight_speed = 500)
+drive_base.straight(10)
+# move_straight_v1(hub, drive_base, 300, 500)
+drive_base.straight(300)
+# where we leave mission 12
+drive_base.curve(-430,44) 
+# drive_base.use_gyro(True)
+drive_base.straight(-195)
+drive_base.turn(44)
+drive_base.straight(-660)
+drive_base.turn(38)
+# pull the pan
+drive_base.settings(straight_speed = 103)
+drive_base.straight(135)
+drive_base.settings(straight_speed = 73)
+drive_base.straight(-20)
+drive_base.straight(20)
+drive_base.straight(-20)
+drive_base.straight(30)
+# drive_base.straight(-20)
+# drive_base.straight(20)
+drive_base.settings(straight_speed = 700)
+drive_base.straight(-200)
+drive_base.curve(-300,60)
+# homebase time! lets try not to lose a precision token plz
+drive_base.settings(straight_speed = 900)
+drive_base.straight(-350)
+
+# the five lucky words for this mission 🍀
+# canidates:
+# 1. banana 🍌 NO
+# 2. discovery 💡 NO
+# 3. hoodie 👚 MAYBE
+# 4. unicorn 🦄 YES!!!
+# 5. maple leaf 🍁
+# 6. cookie 🍪 YES!!!
+# 7. cheese & crackers 🧀 HELL NAH
+# 8. french fries 🍟 YES!!!
+# 9. putty 😁
+# 10. gummy bear 🧸
