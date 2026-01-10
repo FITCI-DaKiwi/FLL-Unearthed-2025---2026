@@ -24,42 +24,48 @@ print('before start, the heading is:', heading)
 
 drive_base.use_gyro(True)
 # move_straight_v1(hub, drive_base, -330, 150)
-drive_base.settings(straight_speed = 150)
+drive_base.settings(straight_speed = 300)
 drive_base.straight(-367)
 print('tHIS iS tHe dAIlY NeWs pREsEnTInG aLeXS BrAiNCeLl LOsS pEr SeCoNd, WhICh iS ', hub.battery.voltage())
 # move_straight_v1(hub, drive_base, -150, 100)
 drive_base.settings(straight_speed = 100)
-drive_base.straight(-150)
+drive_base.straight(-120)
 # put flag down
-left_side.run_angle(200, 80)
+left_side.run_angle(130, 70)
 # move_straight_v1(hub, drive_base, 10, 500)
-drive_base.settings(straight_speed = 500)
+drive_base.settings(straight_speed = 300)
 drive_base.straight(10)
 # move_straight_v1(hub, drive_base, 300, 500)
 drive_base.straight(300)
 # where we leave mission 12
-drive_base.curve(-430,44) 
+drive_base.curve(-230,44) 
 # drive_base.use_gyro(True)
-drive_base.straight(-195)
-drive_base.turn(44)
-drive_base.straight(-660)
-drive_base.turn(38)
+drive_base.straight(-285)
+drive_base.turn(48)
+drive_base.straight(-725)
+drive_base.turn(42)
 # pull the pan
 drive_base.settings(straight_speed = 103)
-drive_base.straight(135)
+drive_base.straight(130)
 drive_base.settings(straight_speed = 73)
 drive_base.straight(-20)
 drive_base.straight(20)
-drive_base.straight(-20)
-drive_base.straight(30)
 # drive_base.straight(-20)
 # drive_base.straight(20)
-drive_base.settings(straight_speed = 700)
+# wiggle
+drive_base.turn(10)
+drive_base.turn(-10)
+# drive_base.turn(10)
+# drive_base.turn(-10)
+
+# drive_base.straight(-20)
+# drive_base.straight(20)
+drive_base.settings(straight_speed = 300)
 drive_base.straight(-200)
 drive_base.curve(-300,60)
 # homebase time! lets try not to lose a precision token plz
-drive_base.settings(straight_speed = 900)
-drive_base.straight(-350)
+drive_base.settings(straight_speed = 1000)
+drive_base.straight(-200)
 
 # the five lucky words for this mission 🍀
 # canidates:
@@ -71,5 +77,5 @@ drive_base.straight(-350)
 # 6. cookie 🍪 YES!!!
 # 7. cheese & crackers 🧀 HELL NAH
 # 8. french fries 🍟 YES!!!
-# 9. putty 😁
+# 9. putty 😁 MAYBE
 # 10. gummy bear 🧸
