@@ -37,7 +37,7 @@ async def main():
     await top.run_angle(500, 55)
     await drive_base.turn(15)
     await drive_base.straight(-280)
-    await drive_base.turn(55)
+    await drive_base.turn(-55)
     await drive_base.straight(700)
 
 
