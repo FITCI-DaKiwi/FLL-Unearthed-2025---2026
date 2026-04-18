@@ -1,0 +1,44 @@
+from pybricks.tools import wait, StopWatch
+def turn_exact(hub, drive_base, left, right, target_degree):
+       left.stop()
+       right.stop()
+       # wait(100)
+      
+       # read the heading after go straight
+       hub.imu.reset_heading(0)
+       # print('after straight, the heading is:', heading)
+
+
+       initial_heading = hub.imu.heading()
+       target_heading = initial_heading + target_degree
+       # turn 90 degree
+       # target_turn = target_degree
+
+
+      
+       print('before turn, the heading is:', initial_heading)
+       drive_base.turn(target_degree)
+       current_heading = hub.imu.heading()
+       print('after turn, the heading is:', current_heading)
+
+
+       while abs(current_heading - target_heading) > 0.05:
+           if current_heading - target_heading > 0.05:
+               left.run(20)
+               right.run(-20)
+               current_heading = hub.imu.heading()
+           if target_heading - current_heading > 0.05:
+               left.run(-20)
+               right.run(20)
+               current_heading = hub.imu.heading()
+       current_heading = hub.imu.heading()
+       print('after correction, the heading is:', current_heading)
+
+
+       # stop turning
+       left.stop()
+       right.stop()
+       # wait(100)
+
+
+
