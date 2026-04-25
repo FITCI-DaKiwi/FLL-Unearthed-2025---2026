@@ -5,11 +5,10 @@ from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 from utils import turn_exact
 
-
 hub = PrimeHub()
-right = Motor(Port.A, Direction.CLOCKWISE)
-left = Motor(Port.B, Direction.COUNTERCLOCKWISE)
+right = Motor(Port.A, Direction.COUNTERCLOCKWISE)
+left = Motor(Port.B, Direction.CLOCKWISE)
 right_side = Motor(Port.E, Direction.CLOCKWISE)
 left_side = Motor(Port.F, Direction.COUNTERCLOCKWISE)
 drive_base = DriveBase(right, left, 62.4, 87.5)
-color_sensor = ColorSensor(Port.C)
+# color_sensor = ColorSensor(Port.C)
